@@ -1,0 +1,23 @@
+<div class="mt-4">
+    <table class="table border">
+        <thead>
+            <tr>
+                <th scope="col">Full Name</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Address</th>
+                <th scope="col">Mobile No.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr scope="row" *ngFor="let teacher of (TEACHERS | pcustom:searchText)">
+                <td>{{teacher.name}}</td>
+                <td>{{teacher.subject}}</td>
+                <td>{{teacher.address}}</td>
+                <td>{{teacher.mobile}}</td>
+              </tr>
+            
+            </tbody>
+          
+    </table> 
+</div>
+

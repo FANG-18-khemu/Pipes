@@ -1,0 +1,17 @@
+<div class="mt-4">
+    <button class="btn btn-primary" (click)="seachText()">
+        Search
+    </button>
+    &nbsp;
+    <button class="btn btn-warning" (click)="reset()">
+        Reset Filter
+    </button>
+    &nbsp;
+    <input type="text" [(ngModel)]="name" placeholder="Enter the name"/>
+      
+</div>
+
+<app-table [TEACHERS]="teachers" [searchText]="searchtext"></app-table>
+   
+
+
